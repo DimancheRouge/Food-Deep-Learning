@@ -348,3 +348,11 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+
+# Visual Studio settings
+*.pyproj
+*.sln
+*.vs
+
+# Deep learning outputs
+*.h5
