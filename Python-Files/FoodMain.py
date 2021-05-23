@@ -1,5 +1,6 @@
 import DLFood
 import Reference
+import FoodCamera
 import os
 
 def main():
@@ -15,7 +16,7 @@ def main():
 
         #ID food
         if (userInp == 1):
-            imgName = input("Enter target file name: ") #INCLUDE EXTENSIONS
+            imgName = FoodCamera.capture()
             modelName = input("Enter model file name: ") #INCLUDE EXTENSIONS
             
             detectedItem = DLFood.identify(imgName, modelName)
